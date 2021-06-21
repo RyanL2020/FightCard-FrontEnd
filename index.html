@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIGHT CARD</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="models/fighter.js"></script>
+    <script type="text/javascript" src="services/api.js"></script>
 </head>
 <body>
     <div class="box">
@@ -15,11 +18,11 @@
         <div class="inner">
           <span>FIGHT CARD</span>
         </div>
-      </div>
+    </div>
       
-      <div class="container">
-        <form class="add-toy-form">
-          <h3>Add a Fighter to the Card!</h3>
+        <div class="container">
+          <form class="add-fighter-form">
+            <h3>Add a Fighter to the Card!</h3>
   
   
           <h4>Name:</h4>
@@ -52,11 +55,10 @@
         </form>
       </div>
       <p style="text-align:center">
-         <button id="new-toy-btn">Add A New Fighter!</button>
+         <button id="new-fighter-btn">Add A New Fighter!</button>
       </p>
   
-      <div id="toy-collection"></div>
-      <script type="text/javascript" src="src/index.js"></script>
+      <div id="fighter-collection"></div>
     </body>
   </html>
 </body>
