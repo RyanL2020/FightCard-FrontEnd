@@ -39,25 +39,14 @@ class Fighter {
             `
     
     }
-    renderFighter =(fighter)=> {  // Creating a Display in a Card for each Fighter
+    renderFighter =(fighter)=> {  
   
-
-        // Create the Outer Wrapping/Containing Element 
-        ////  - In this case an empty <div></div>
         const cardDiv = document.createElement("div")
-  
-        // Assigning any classes etc to it
-        ////  - In this case: class="card"
+
         cardDiv.classList.add("card")
-          //  Adding a (class=) to  (cardDiv)
-          ////  <div class="card"><div>
           cardDiv.setAttribute("data-id", fighter.id)
-          // Addind an (id=) to (cardDiv)
-          ////  <div class="card" id={actor.id}><div>
           cardDiv.id = fighter.id
 
-        // Setting the InnerHTML for the (cardDiv)
-        ////  Actually Creates the Inner Elements/Tags  
         cardDiv.innerHTML = this.makeACard()
         
 
@@ -123,15 +112,12 @@ class Fighter {
 
 
         const collectionDiv = document.querySelector("#fighter-collection")
-        // *** TRY OUT AS STATIC *** //
         collectionDiv.append(cardDiv)
-        // SSSlap it on the DOM (toy-collection)
+       
         
         
     }; 
-    //  ***  SHOW HOW TO ADJUST SIZING  ***  //
-    //  ***  SHOW THIS WITH CREATE ELEMENT  *** //
-
+   
 
 
 
