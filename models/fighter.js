@@ -32,11 +32,12 @@ class Fighter {
             <h4>  Wins: ${this.wins} </h4>
             <h4> Loses: ${this.losses} </h4>
             
+            `
+            
 
             
 
   
-            `
     
     }
     renderFighter =(fighter)=> {  
@@ -48,60 +49,12 @@ class Fighter {
         cardDiv.id = fighter.id
 
         cardDiv.innerHTML = this.makeACard()
+    
         
 
 
  
-        cardDiv.addEventListener("click", (event) => { 
-            console.log("fighter clicked", event.target)
-            if(event.target.className === "fighter-icon"){
-                console.log("With  (===)  ", event.target) }
-            if(event.target.matches("img")){ 
-                console.log("With  (.matches)  ", event.target) }
-            if(event.target.matches(".edit-btn")){
-                const editForm = document.createElement("form")
-                    editForm.innerHTML = `
-            
-                        <br><br>
-                        <h2>Editing This Fighter In a Class!:</h2>
-                        <form class="name-change-form">
-                        <br>
-                        <button class="close-button">✖️CLOSE✖️THE✖️EDIT✖️FORM✖️</button>
-                        <br>
-                        <h4>Name:</h4>
-                        <input
-                        type="text"
-                        name="name"
-                        value="${cardDiv.querySelector("h2").innerText}"
-                        placeholder="${cardDiv.querySelector("h2").innerText}"
-                        class="input-text-name"
-                        />        
-                        <br />
-                        <h4>Image URL:</h4>
-                        <input
-                        type="text"
-                        name="image"
-                        value="${cardDiv.querySelector("img").src}"
-                        placeholder="${cardDiv.querySelector("img").src}"
-                        class="input-text-image"
-                        />        
-                        <br />
-                        <input
-                        type="submit"
-                        name="submit"
-                        value="Update Fighter Name!!!!"
-                        class="submit-button"
-                        />
-                        </form>
-                        <br><br><br><br>
-                        `
-                    console.log(editForm)  
-                    cardDiv.append(editForm)
-                    console.log(">>>>>>>>", cardDiv)
- 
-                }
-                
-            })
+        
             
             
             const collectionDiv = document.querySelector("#fighter-collection")

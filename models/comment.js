@@ -17,9 +17,11 @@ class Comment {
     
         return `<br><br>
         
-        <h2 id="${this.id}" data-id="${this.id}"></h2>
-        <h4> Name: ${this.author_name}</h4>
-        <p> Comment: ${this.detail}  </p> `
+        <p id="${this.id}" data-id="${this.id}"></p>
+        <p> Name: ${this.author_name}</p>
+        <p> Comment: ${this.detail}  </p> 
+        
+        `
     
     
     
@@ -29,7 +31,7 @@ class Comment {
 
         const cardDiv = document.createElement('div')
 
-        cardDiv.classList.add('card')
+        cardDiv.classList.add('card_overlay')
         cardDiv.setAttribute('data-id', comment.id)
         cardDiv.innerHTML = this.makeCardDiv()
 
@@ -37,6 +39,7 @@ class Comment {
 
         collectionDiv.append(cardDiv)
 
+        
 
 
     }
