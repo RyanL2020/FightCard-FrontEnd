@@ -25,12 +25,13 @@ class Fighter {
         return `
   
             <h2 id="fighter" data-id="${this.id}">${this.name}</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeCvtWetSBUjXe1GcKeWV5Y20K8gaD-XkUNg&usqp=CAU"
-            <h4><a href="https://www.youtube.com/watch?v=LWE79K2Ii-s">Highlights</a></h4>
+            <img src=${this.image}/>
+            <h4><a href=${this.highlight}>Highlights</a></h4>
             <h4> Style: ${this.style} </h4>
             <h4> Organization: ${this.organization} </h4>
             <h4>  Wins: ${this.wins} </h4>
             <h4> Loses: ${this.losses} </h4>
+            <button data-id="${this.id}" class="delete-btn"> DELETE FIGHTER </button>
             
             `
             
