@@ -60,23 +60,27 @@ class Api {
     }
 
             //delete fighter fetch
+
         static deleteFighters(){
+        
             const fighterCollection = document.querySelector('#fighter-collection') 
             fighterCollection.addEventListener('click', event =>{ event.preventDefault();
+
             if (event.target.matches('.delete-btn')) { 
                 console.log(event.target)
+
             const id = event.target.dataset.id
-            const deleteFighter = document.getElementById(id)
-            fetch(`${URL_FIGHTER}/${id}`, 
+            const koFighter = document.getElementById(id)
+            fetch(`${this.URL_FIGHTER}/${id}`, 
+
             {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" }
 
             })
+
             .then(response => response.json())
-            .then(
-                deleteFighter.remove()
-            )
+            .then(koFighter.remove())
         }
         })
             
