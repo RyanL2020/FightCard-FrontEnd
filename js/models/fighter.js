@@ -53,6 +53,7 @@ class Fighter {
     
         
         
+        
             
             
             const collectionDiv = document.querySelector("#fighter-collection")
