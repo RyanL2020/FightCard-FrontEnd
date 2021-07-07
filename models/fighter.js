@@ -25,8 +25,8 @@ class Fighter {
         return `
   
             <h2 id="fighter" data-id="${this.id}">${this.name}</h2>
-            <img src=${this.image}/>
-            <h4><a href=${this.highlight}>Highlights</a></h4>
+
+            <img src=${this.image} alt ${this.name}/> 
             <h4> Style: ${this.style} </h4>
             <h4> Organization: ${this.organization} </h4>
             <h4>  Wins: ${this.wins} </h4>
