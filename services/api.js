@@ -15,7 +15,7 @@ class Api {
     }) 
 
     })
-    //.then(this.fetchComments())
+    
     }
 
    //Post Fetch
@@ -95,10 +95,13 @@ class Api {
     static fetchComments(){
     fetch(this.URL_COMMENT).then(response => response.json())
     .then(json => { console.log(json);
-    json.forEach(comment => {  console.log(comment) 
-    const newComment = new Comment(comment)
-    console.log(newComment)
-    newComment.renderComment(comment)
+    json.forEach(comment => {  console.log(comment)
+
+        setTimeout(function() {
+            const newComment = new Comment(comment)
+        console.log(newComment)
+        newComment.renderComment(comment)}, 
+        10000);
 
     
     }) 

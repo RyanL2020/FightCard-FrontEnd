@@ -52,9 +52,6 @@ class Fighter {
         cardDiv.innerHTML = this.makeACard()
     
         
-
-
- 
         
             
             
