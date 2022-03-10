@@ -32,8 +32,10 @@ class Fighter {
             <h4>  Wins: ${this.wins} </h4>
             <h4> Loses: ${this.losses} </h4>
             <button data-id="${this.id}" class="delete-btn"> DELETE FIGHTER </button>
+            <button data-id="${this.id}" class="edit-btn"> EDIT FIGHTER </button>
             
             `
+            
             
 
             
@@ -50,20 +52,19 @@ class Fighter {
         cardDiv.id = fighter.id
 
         cardDiv.innerHTML = this.makeACard()
-    
-        
-        
-        
             
+
+
+        
             
             const collectionDiv = document.querySelector("#fighter-collection")
             collectionDiv.append(cardDiv)
-
+            
+    }
 
 
         
         
-    }; 
 
     
     
@@ -71,5 +72,4 @@ class Fighter {
 
 
 
-}
-
+};

@@ -29,7 +29,6 @@ class Api {
 
         const name = event.target.name.value
         let image = event.target.image.value
-        const highlight = event.target.highlight.value
         const style = event.target.style.value
         const organization = event.target.organization.value
         const wins = event.target.wins.value
@@ -46,7 +45,6 @@ class Api {
 
                 "name": name,
                 "image_url": image, 
-                "highlight_url": highlight,
                 "style": style,
                 "organization": organization,
                 "wins": wins,
@@ -59,7 +57,7 @@ class Api {
         const newFighter = new Fighter(fighterPosted)
         newFighter.renderFighter(fighterPosted)
         })
-    
+        newFighterForm.reset()
     })
     }
 
@@ -83,12 +81,11 @@ class Api {
 
             })
 
-            .then(response => response.json())
-            .then(koFighter.remove())
-        }
-        })
+            koFighter.remove()
+         }
+      })
             
-        }
+    }
 
         //Comments Fetch
     static URL_COMMENT = "http://localhost:3000/comments"
@@ -101,12 +98,15 @@ class Api {
             const newComment = new Comment(comment)
         console.log(newComment)
         newComment.renderComment(comment)}, 
-        10000);
+        5000);
 
     
     }) 
     })
     }
         
+        
+}      
 
-}
+
+

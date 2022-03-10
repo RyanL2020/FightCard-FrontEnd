@@ -16,11 +16,11 @@ class Comment {
     makeCardDiv = () => { console.log(this)
     
         return `<br><br>
-        
+        <div class="comment-box">   
         <p id="${this.id}" data-id="${this.id}"></p>
         <p> Name: ${this.author_name}</p>
         <p> Comment: ${this.detail}  </p> 
-        
+        </div>  
         `
     
     
@@ -38,10 +38,7 @@ class Comment {
         const collectionDiv = document.getElementById(`${comment.fighter_id}`)
 
         collectionDiv.append(cardDiv)
-
         
-
-
+        
     }
-
-};
+}
