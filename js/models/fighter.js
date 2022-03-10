@@ -27,10 +27,10 @@ class Fighter {
             <h2 id="fighter" data-id="${this.id}">${this.name}</h2>
 
             <img src=${this.image} alt ${this.name}/> 
-            <h4> Style: ${this.style} </h4>
-            <h4> Organization: ${this.organization} </h4>
-            <h4>  Wins: ${this.wins} </h4>
-            <h4> Loses: ${this.losses} </h4>
+            <p> Style: ${this.style} </p>
+            <p> Organization: ${this.organization} </p>
+            <p>  Wins: ${this.wins} </p>
+            <p> Loses: ${this.losses} </p>
             <button data-id="${this.id}" class="delete-btn"> DELETE FIGHTER </button>
             <button data-id="${this.id}" class="edit-btn"> EDIT FIGHTER </button>
             

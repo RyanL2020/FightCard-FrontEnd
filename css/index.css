@@ -77,7 +77,7 @@ body {
   
   .fighter-avatar {
     justify-self: center;
-    height: 12rem;
+    height: auto;
     width: auto;
   }
   .card__overlay {
@@ -157,16 +157,20 @@ body {
   }
 
   h4 {
+    
     color: blue;
     margin: auto;
   }
 
   .comment-box {
     color: blue;
+    border: dotted;
+    border-color: black;
   }
 
   p {
     margin: auto;
+    margin-right: auto;
   }
 
   
