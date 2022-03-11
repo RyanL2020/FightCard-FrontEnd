@@ -16,7 +16,7 @@ class Comment {
     makeCardDiv = () => { console.log(this)
     
         return `<br><br>
-        <div class="comment-box">   
+        <div class="overlay__text">   
         <p id="${this.id}" data-id="${this.id}"></p>
         <p> Name: ${this.author_name}</p>
         <p> Comment: ${this.detail}  </p> 
@@ -31,7 +31,7 @@ class Comment {
 
         const cardDiv = document.createElement('div')
 
-        cardDiv.classList.add('card_overlay')
+        cardDiv.classList.add('card__overlay')
         cardDiv.setAttribute('data-id', comment.id)
         cardDiv.innerHTML = this.makeCardDiv()
 
