@@ -197,9 +197,20 @@ body {
     border-color: black;
   }
 
-  p {
-    margin: auto;
-    margin-right: auto;
+  .p-loses {
+    margin-right: 7.5rem;
+    margin-top: -1rem;
   }
 
+  .p-wins {
+    margin-right: 7.5rem;
+    margin-top: -1rem;
+  }
+
+  .p-organization {
+    margin-right: 3.2rem;
+    margin-top: -1rem;
+  }
+
+  
   
