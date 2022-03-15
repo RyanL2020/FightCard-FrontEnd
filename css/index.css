@@ -7,7 +7,7 @@ body {
 	background-color: rgb(250, 245, 244);
 }
 
-.box {
+/* .box {
 	display: flex; 
 }
 
@@ -54,7 +54,7 @@ body {
 	to {
 		left: -100%;
 	}
-}
+} */
 /* end marquee title */
 
 
@@ -212,5 +212,8 @@ body {
     margin-top: -1rem;
   }
 
-  
+  .fight-title {
+    font-family: 'Graduate', cursive;
+    font-size: larger;
+  }
   
