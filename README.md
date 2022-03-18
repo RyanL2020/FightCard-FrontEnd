@@ -1,6 +1,7 @@
-Welcome To FightCard!!!!
+Welcome To Fight Card!!!!
 
-A simple app that lets you see and even create your favorite Fighter.
+Let's create the biggest data base of combat sport athlets. Add a fighter from any level of any combat sport. The definition of a combat athlete is:
+
 
 Please first start the backEnd of the project by running
     rails s 
