@@ -32,7 +32,7 @@ class Fighter {
             <p class="p-organization">Organization: ${this.organization} </p>
             <p class="p-wins">Wins: ${this.wins} </p> 
             <p class="p-loses">Loses: ${this.losses} </p>
-            <button data-id="${this.id}" class="delete-btn"> DELETE FIGHTER </button>
+            <button data-id="${this.id}" type="button" class="btn btn-outline-danger "> DELETE FIGHTER </button>
             
             
             `

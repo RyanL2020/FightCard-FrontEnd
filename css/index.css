@@ -125,7 +125,7 @@ body {
   } */
   
   
-  button {
+  #new-fighter-btn {
     position: relative;
     background-color: rgb(51, 43, 43);
     border: none;
@@ -137,7 +137,7 @@ body {
     justify-self: center;
   }
   
-  button:hover {
+  #new-fighter-btn:hover {
     background-color: whitesmoke;
     border: rgb(51, 43, 43) solid 1px;
     color: rgb(51, 43, 43);
@@ -148,7 +148,7 @@ body {
     width: stretch;
     height: auto;
     display: none;
-    background: #1febeb;
+    background: #b9bebe;
     opacity: .8;
   }
   
@@ -215,5 +215,9 @@ body {
   .fight-title {
     font-family: 'Graduate', cursive;
     font-size: larger;
+  }
+
+  #fighter-collection {
+    background-color: black;
   }
   
