@@ -1,0 +1,4 @@
+class fightCard {
+
+    static all = []
+}
